@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fdf0d5;
+}
+
+.container {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.container .game-board {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 660px;
+	gap: 20px;
+}
+
+.container .game-board img {
+	max-width: 150px;
+	cursor: pointer;
+}
+
+.container .game-board img.matched {
+	filter: contrast(50%);
+	cursor: not-allowed;
+}
